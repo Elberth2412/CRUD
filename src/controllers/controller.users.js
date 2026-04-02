@@ -11,12 +11,13 @@ const getUsers = async (req, res) => {
         });
         
     } catch (error) {
-        console.error(error),
+        console.error("Error en el servidor: ", error),
         res.status(400).json({
             error: "Error en el servidor 1",
         })
     }
 }
+
 
 module.exports = {
     getUsers
