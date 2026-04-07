@@ -9,7 +9,7 @@ const login = async (req, res) => {
 
         if (result.rows.length === 0) {
             return res.status(400).json({
-                mensaje: "Credenciales Invalidas email"
+                mensaje: "Credenciales Invalidas"
             })
         }
 
@@ -20,7 +20,7 @@ const login = async (req, res) => {
 
         if (password !== usuario.password) {
             return res.status(400).json({
-                mensaje: "Credenciales Invalidas pass"
+                mensaje: "Credenciales Invalidas"
             })
         }
 
