@@ -15,8 +15,6 @@ const login = async (req, res) => {
 
         const usuario = result.rows[0];
 
-        console.log(typeof usuario.password);
-
 
         if (password !== usuario.password) {
             return res.status(400).json({

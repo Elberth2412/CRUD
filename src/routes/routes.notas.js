@@ -2,9 +2,9 @@ const express = require("express");
 const router =  express.Router();
 
 const {
-    getNotas
+    postNotas
 } = require("../controllers/controller.notas");
 
-router.get("nota", getNotas);
+router.post("/", postNotas);
 
 module.exports = router;

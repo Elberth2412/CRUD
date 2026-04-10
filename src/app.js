@@ -12,6 +12,6 @@ app.use(express.json());
 
 app.use("/users", usersRoutes);
 app.use("/auth", authRoutes);
-app.use("nota", notasRoutes);
+app.use("/notas", notasRoutes);
 
 module.exports = app;
