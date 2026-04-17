@@ -1,6 +1,5 @@
 const cn = require("../db/db");
 
-
 const getUsers = async (req, res) => {
     try {
 

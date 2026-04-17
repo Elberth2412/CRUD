@@ -4,9 +4,7 @@ const postNotas = async (req, res) => {
 
     const { id } = req.body;
 
-
     try {
-
 
         const result = await cn.query("select nota from notas where id_usuario = $1", [id]);
 
